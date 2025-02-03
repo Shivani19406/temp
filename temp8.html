@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+    <style>
+        
+        a{
+            text-decoration: none;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .header
+        {
+            color:blue;
+        }
+        button{
+            width:100%;
+            background-color: blue;
+            color:white;
+            border-radius: 20px;
+            padding:10px;
+            border:none
+        }
+        .b1{
+            width:100%;
+            border-radius: 20px;
+            padding:10px;
+            border:none
+        }
+        .b{
+            border: 1px gray solid;
+            border-radius: 20px;
+            padding: 7px;
+            margin-top: 20px;
+            text-align: center;
+            color: grey;
+        }
+        input[type=text],[type=password]
+        {
+            width:310px;
+        }
+    </style>
+<body>
+    <div>
+        <div class="header">
+            <h1>Linked In</h1>
+        </div>
+        <div class="box">
+            <form>
+                <h2>Sign in</h2>
+                <p>Stay updated on your professional world.</p>
+                <p>
+                    <input type="text" placeholder="Email or Phone" required>
+                </p>
+                <p>
+                    <input type="password" placeholder="Password" required>
+                </p>
+                <p>
+                    <a href="#">Forgot password?</a>
+                </p>
+                <p>
+                    <input type="checkbox"><label>Keep me logged in</label>
+                </p>
+                
+                    <button>Sign In</button>
+                
+                <p>or</p>
+                <p>By clicking Continue, you agree to LinkedIn’s <a href="#"><br>User's Agreement</a>,<a href="#">Privacy Policy</a> and <a href="#">Cookie Policy</a></p>
+                <div class="b1">
+                <div class="b">
+                    Continue with Google
+                </div>
+                <div class="b">
+                    Continue with Apple
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
