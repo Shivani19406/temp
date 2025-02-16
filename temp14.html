@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMP14</title>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;  
+        }
+        button{
+            width:100%;
+            background-color: blue;
+            color:white;
+            border-radius: 20px;
+            padding:10px;
+            border:none
+        }
+        input[type=text],[type=password]
+        {
+            width:310px;
+        }
+    </style>
+    <script>
+        function f1(){
+            let a1=document.getElementById("email").value
+            let a2=document.getElementById("pass").value
+            if(a1!=="john@gmail.com" || a2!=="1234")
+                msg.innerHTML="Access Denied"
+            else
+                msg.innerHTML="Welcome"
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div class="box">
+            <form>
+                <p><div id="msg"></div></p>
+                <p>
+                    <input type="text" id="email" placeholder="Email address or phone number" required>
+                </p>
+                <p>
+                    <input type="password" id="pass" placeholder="Password" required>
+                </p>
+                <button onclick="f1()">Login</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

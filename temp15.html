@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp15</title>
+</head>
+<script>
+    function f1(){
+    let a=Number(document.getElementById("num1").value)
+    let b=Number(document.getElementById("num2").value)
+    //a=Number(a)
+    //b=Number(b)
+    // x1.innerHTML=${a}+${b}=${a+b}
+    // x2.innerHTML=${a}-${b}=${a-b}
+    // x3.innerHTML=${a}*${b}=${a*b}
+    // x4.innerHTML=${a}/${b}=${a/b}
+    let str=${a}+${b}=${a+b}<br>;
+    str=str+${a}-${b}=${a-b}<br>;
+    str=str+${a}*${b}=${a*b}<br>;
+    str=str+${a}/${b}=${a/b}<br>;
+    x1.innerHTML=str;
+    }
+</script>
+<body>
+    <!-- <script>
+    let name="xyz"
+    document.write("My name is "+name)
+    document.write(My name is ${name})
+    </script> -->
+    <div>
+        <p><input type="number" id="num1"></p>
+        <p><input type="number" id="num2"></p>
+        <p><button onclick="f1()">Submit</button></p>
+        <div id="x1"></div>
+        <!-- <div id="x2"></div>
+        <div id="x3"></div>
+        <div id="x4"></div> -->
+    </div>
+</body>
+</html>

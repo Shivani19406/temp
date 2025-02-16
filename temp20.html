@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp20</title>
+    <script>
+        function f1(){
+        let n=Number(document.getElementById("n").value)
+        let str=""
+        for(let i=1;i<=10;i++)
+        {
+            str=str+${n}X${i}=${n*i}<br>
+        }
+        msg.innerHTML=str
+    }
+    </script>
+</head>
+<body>
+    <p><input type="number" onchange="f1()" id="n" placeholder="enter number"></p>
+    <button onclick="f1()">Submit</button>
+    <div id="msg"></div>
+</body>
+</html>

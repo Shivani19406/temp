@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp15practice</title>
+    <script>
+        function f1(){
+        let a1=document.getElementById("name").value
+        let a2=document.getElementById("age").value
+        let a3=document.getElementById("study").value
+        let a4=document.getElementById("place").value
+        msg.innerHTML=${a1} | ${a2} | ${a3} | ${a4}
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p><input type="text" id="name"></p>
+        <p><input type="number" id="age"></p>
+        <p><input type="text" id="study"></p>
+        <p><input type="text" id="place"></p>
+        <p><button onclick="f1()">Submit</button></p>
+        <div id="msg"></div>
+    </div>
+</body>
+</html>
